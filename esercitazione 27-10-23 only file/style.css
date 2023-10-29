@@ -1,0 +1,197 @@
+/*reset*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+/*end reset*/
+
+/*typhography*/
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+/*header*/
+.main-header {
+  background-color: #d989e9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  position: sticky; /*prova per menù scrollche segue*/
+}
+
+.header-logo {
+  padding-left: 30px;
+}
+/*end header*/
+
+/*menu*/
+.main-nav ul li {
+  list-style-type: none;
+}
+
+.main-nav ul {
+  padding: 50px;
+}
+
+.main-nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.35s ease;
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  font-size: 30px;
+}
+/*end menu*/
+
+/*hero section*/
+.hero-section {
+  display: flex;
+  background-color: rgba(208, 105, 234, 0.396);
+  /* padding: 100px 0px; il padding serve a dare spazio tra la scritta e il bordo*/
+  min-height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  color: black;
+  font-family: "Playpen Sans", cursive;
+  font-weight: 600;
+  font-size: 30px;
+  padding-top: 30px;
+  margin-left: 30px;
+}
+
+.text {
+  margin-left: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.button {
+  padding: 10px; /*perchè il display flex non mi sposta il bottone?!?!*/
+  background-color: none;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 30px;
+  border: 3px solid white; /*questo serve a fare il bordino bianco nel bottone*/
+  border-radius: 10px; /*questo serve a smussare gli angoli del bottone*/
+  font-family: Playpen Sans;
+}
+
+a {
+  color: black;
+}
+
+.button:hover {
+  background-color: white;
+  transition-delay: 0.12s;
+}
+
+/*end hero section*/
+
+/*column section*/
+h2 {
+  font-family: "Playpen Sans", cursive;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.column-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d989e9;
+  flex-direction: column;
+}
+
+.column-image {
+  border: 3px solid black;
+  width: 100%;
+}
+.column-image img {
+  width: 100%;
+  height: auto;
+} /*tutte le immagini dentro column-image devono avere grandezza 100%*/
+
+.column-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  width: 100%;
+}
+
+.button1 {
+  display: block;
+  width: 200px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: none;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid white; /*questo serve a fare il bordino bianco nel bottone*/
+  border-radius: 10px; /*questo serve a smussare gli angoli del bottone*/
+  font-family: "Playpen Sans", cursive;
+}
+
+.button1:hover {
+  background-color: white;
+  transition-delay: 0.12s;
+}
+/*end column section*/
+
+/*footer*/
+.footer {
+  background-color: rgba(208, 105, 234, 0.396);
+  padding-top: 200px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.quickname {
+  font-family: "Playpen Sans", cursive;
+  font-weight: 600;
+  list-style: none;
+}
+.us a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.us {
+  list-style-type: none;
+}
+
+/*end footer*/
+
+/*mobile settings*/
+@media screen and (min-width: 768px) {
+  .hero-section {
+    /* padding: 100px 0px; il padding serve a dare spazio tra la scritta e il bordo*/
+    min-height: 400px;
+  }
+  .main-nav ul li a {
+    font-size: 40px;
+  }
+  .column-section {
+    flex-direction: row;
+  }
+  .column-image {
+    margin-left: 200px;
+    width: 50%;
+  }
+  .column-text {
+    width: 100%;
+  }
+}
