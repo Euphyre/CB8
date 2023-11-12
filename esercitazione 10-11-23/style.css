@@ -1,0 +1,31 @@
+body,
+html {
+  height: 100%;
+}
+
+.hero-image {
+  background-image: url("https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.button {
+  background-color: rgba(65, 180, 233, 0.5);
+  text-decoration: none;
+  color: black;
+}
+
+.hidesection {
+  display: none;
+}
