@@ -1,0 +1,34 @@
+body,
+html {
+  height: 100%;
+}
+.robot-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.robot-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 160px;
+  background-color: #f9f5ea;
+  border-radius: 12px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+}
+
+.robot-box img {
+  height: 180px;
+  object-fit: cover;
+}
+
+.robot-box h4,
+p {
+  margin: 4px 0;
+  padding: 4px 0;
+}
+
+.robot-box .text {
+  padding: 0 10px;
+}
