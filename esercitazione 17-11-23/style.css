@@ -1,0 +1,74 @@
+/*immagini e testo giustificati e centrati rispetto al body*/
+.paragraph {
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+img:last-child {
+  display: block;
+  margin: 20px auto; /* Aggiunge un margine sopra e sotto l'immagine */
+}
+
+.pop-up {
+  position: fixed;
+  top: 10%;
+  left: calc(50% - 170px);
+  display: flex;
+  padding: 12px 24px;
+  flex-direction: column;
+  align-items: center;
+  width: 340px;
+  background-color: lightcoral;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 0 4px rgba(98, 54, 54, 0.4);
+  z-index: 1000; /*metto un numero più alto di z-index in modo che sia in un layer superiore all'overlay*/
+}
+
+.popup-button {
+  border: 0;
+  width: 120px;
+  height: 30px;
+  background-color: white;
+  color: lightcoral;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.35s;
+  text-align: center;
+}
+
+.popup-button:hover {
+  background-color: lightcoral;
+  color: white;
+  border: 1px solid white;
+}
+
+.popup-button2 {
+  border: 0;
+  width: 120px;
+  height: 30px;
+  background-color: white;
+  color: lightcoral;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.35s;
+  text-align: center;
+  margin: 10px;
+}
+
+.popup-button2:hover {
+  background-color: lightcoral;
+  color: white;
+  border: 1px solid white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Colore nero semi-trasparente */
+  z-index: 999; /* Assicura che l'overlay sia sopra gli altri elementi */
+}
