@@ -1,0 +1,350 @@
+/*reset*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+/*end reset*/
+
+/*typography*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+/*roboto thin 100 p, roboto regular 400 nav and buttons, roboto 700 h*/
+
+/*------------nav section-------------*/
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 80px;
+}
+
+.navMenu a {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.navButtons a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.buttonOrder {
+  border: 3px solid black;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 4px 20px;
+}
+/*------------ END nav section-------------*/
+
+/*------------HERO section-------------*/
+.mainHero {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.mainTitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.paragraph1 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.buttonGetstarted {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 4px 20px;
+}
+
+.heroImage {
+  object-fit: contain;
+  width: 650px;
+  height: 450px;
+}
+/*------------END HERO section-------------*/
+
+/*------------title2 and box section-------------*/
+.title2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+}
+.paragraph2,
+.paragraphBox1,
+.paragraphBox2,
+.paragraphBox3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.imgBox1,
+.imgBox2,
+.imgBox3 {
+  border-radius: 30px;
+  margin-left: 95px;
+  margin-bottom: 20px;
+  height: 150px;
+  width: 200px;
+}
+
+.titleBox1,
+.titleBox2,
+.titleBox3 {
+  font-family: "Roboto", sans-serif;
+}
+
+/*------------END title 2 and box section-------------*/
+
+/*-----------Image background section--------------*/
+.imageBackground {
+  background-image: url("https://t4.ftcdn.net/jpg/05/42/06/91/360_F_542069179_de4QTxFFgMfdc1DtxE9J2UnaljhQNEY1.jpg");
+  background-size: cover;
+  height: 100px;
+  margin-top: 150px;
+
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 700;
+  display: flex;
+  line-height: 100px;
+  justify-content: center;
+}
+/*----------------------END background section--------------*/
+
+/*-------------Blog and cardsection----------------*/
+.blogSection {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.title3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.paragraph2,
+.paragraphBox1,
+.paragraphBox2,
+.paragraphBox3 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 100;
+}
+
+.cardContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.card1,
+.card2,
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 300px;
+  height: 400px;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.textBox1,
+.textBox2,
+.textBox3 {
+  padding: 2px 16px;
+  text-align: center;
+}
+.titleBoxtext1,
+.titleBoxtext2,
+.titleBoxtext3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+/*-------------END Blog and card section------------*/
+
+/*-------------form section--------------------*/
+.formTextWrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+  background-color: rgba(73, 190, 232, 0.536);
+  width: 100%;
+  padding: 20px;
+}
+
+.formText {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.formParagraph {
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  margin-left: 30px;
+}
+
+.formWrapper #name,
+#surname,
+#email,
+#subject,
+#message {
+  background-color: rgba(73, 190, 232, 0.536);
+  border-radius: 6px;
+  border-style: solid;
+  margin: 10px;
+  width: 40%;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 400;
+  text-decoration: none;
+  margin: 10px;
+  width: 83%;
+}
+/*------------- END form section--------------------*/
+
+/*-------------footer------------------*/
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(73, 190, 232, 0.221);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.name1,
+.newsletter {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.name1,
+.name2 {
+  list-style-type: none;
+}
+.name2 a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.newsletterParagraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+#footerEmail {
+  background-color: rgba(218, 233, 238, 0.221);
+  border-style: none;
+  border-bottom: 1px solid black;
+}
+
+/*------------END footer--------------*/
+
+/*-------------------MOBILE------------------*/
+@media screen and (max-width: 916px) {
+  /*---NAVBAR---*/
+  .navBar {
+    flex-direction: column; /* Imposta il menu di navigazione come colonna e non più come riga */
+    align-items: center; /* Centra gli elementi */
+    margin: 20px; /* Aggiusta il margine */
+  }
+
+  .navMenu,
+  .navButtons {
+    margin-top: 10px; /* spazio tra il menu e i pulsanti */
+  }
+
+  .navMenu a,
+  .navButtons a {
+    display: block; /* link a blocchi per occupare l'intera larghezza */
+    text-align: center; /* Centra il testo */
+    margin: 10px 0; /* Aggiusta il margine tra i link */
+  }
+
+  /*--HERO--*/
+  .mainHero {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .paragraph1 {
+    text-align: center;
+  }
+
+  .heroImage {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  /*--TITLE2 AND BOX SECTION--//BLOG AND CARD SECTION--*/
+  .boxes,
+  .blogsection,
+  .cardContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    margin-bottom: 30px;
+  }
+  /*--FOOTER--*/
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+}
