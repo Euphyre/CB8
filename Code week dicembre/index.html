@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Address Book</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" type="module"></script>
+  </head>
+
+  <!--Il cliente ci ha richiesto una piccola rubrica sotto forma di web app per ricercare gli utenti tramite email o name o username.
+-->
+  <body>
+    <!--section 1:-	Sezione 1: La pagina avrà un titolo in alto con testo “Address Book”;
+-->
+    <header>
+      <div class="headerWrapper">
+        <div class="logoWrapper">
+          <img src="logo rubrica.png" class="logo" alt="logo" />
+        </div>
+        <!-- aggiungo delle icone e bottoni per rendere l'app più verosimile-->
+        <h1 class="mainTitle">Address Book</h1>
+        <div class="buttonWrapper">
+          <div class="buttonAdd"><a href="/">contact</a></div>
+          <div class="buttonExport"><a href="/">Export contact</a></div>
+        </div>
+      </div>
+    </header>
+    <!---	Sezione 2: Sotto il titolo sarà presente un campo di testo dove poter digitare per cercare l'utente. Bisogna prestare molta attenzione al fatto che “Lucas” o “LUCAS” per noi è sempre lucas. La ricerca è lato client non lato server.
+-->
+    <section class="searchSection">
+      <input
+        class="searchBar"
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Find by e-mail or username"
+      />
+    </section>
+
+    <!--Sezione 3: La lista contatti filtrata oppure per intero (cioè quando il campo testo della sezione 2 è vuoto). Aggiungere pulsante aggiungi ai preferiti ad ogni card.
+-->
+    <section class="cardSection"></section>
+
+    <!--sezione 4:-	Sezione 4: sono visualizzati i contatti preferiti con pulsante rimuovi dai preferiti
+-->
+    <h2 class="favouritesText">Favourites</h2>
+    <section class="favourites"></section>
+  </body>
+</html>

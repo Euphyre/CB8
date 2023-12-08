@@ -1,0 +1,221 @@
+/*reset*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+/*end reset*/
+
+/*typography*/
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+/*header*/
+.logoWrapper {
+  width: 400px;
+}
+.logo {
+  width: 100px;
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  background-color: rgb(2, 164, 251);
+  background-size: 200px;
+}
+
+.mainTitle {
+  flex-grow: 1;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 100px;
+  text-align: center;
+}
+
+.buttonWrapper {
+  width: 400px;
+  display: flex;
+  gap: 10px;
+}
+
+.buttonAdd {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgb(7, 237, 130);
+  color: black;
+  border: 3px solid rgb(7, 237, 130);
+  border-radius: 10px;
+  padding: 4px 20px;
+}
+
+.buttonAdd a,
+.buttonExport a {
+  text-decoration: none;
+  color: black;
+}
+
+.buttonExport {
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: rgb(237, 158, 11);
+  color: black;
+  border: 3px solid rgb(237, 158, 11);
+  border-radius: 10px;
+  padding: 4px 20px;
+}
+
+.buttonAdd:hover,
+.buttonExport:hover {
+  background-color: rgb(2, 164, 251); /* Cambia il colore di sfondo */
+}
+
+.buttonAdd a:hover {
+  color: white;
+}
+
+.buttonExport a:hover {
+  color: white;
+}
+/*END header*/
+
+/*searchBar section*/
+
+.searchSection {
+  background-color: rgba(2, 164, 251, 0.412);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.searchBar {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: "Varela Round", sans-serif;
+}
+
+.searchBar::placeholder {
+  color: #999;
+}
+
+.searchBar:hover {
+  border-color: rgb(2, 164, 251);
+}
+/*END searchbar section*/
+
+/*card section*/
+.cardSection {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+  background-color: rgba(2, 164, 251, 0.412);
+}
+.cardWrapper {
+  border: 1px solid rgb(2, 164, 251);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  background-color: rgba(11, 101, 237, 0.438);
+  transition: 0.3s;
+}
+
+.cardWrapper:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardTitle,
+.username,
+.email,
+.phone {
+  font-family: "Varela Round", sans-serif;
+}
+.favouriteImage {
+  width: 40px;
+  height: 40px;
+}
+
+/*END card section*/
+
+/*error section*/
+.errorMessage {
+  font-family: "Varela Round", sans-serif;
+  font-size: 25px;
+}
+
+/*favourites section*/
+
+.favouritesText {
+  background-color: rgb(2, 164, 251); /*rgba(137, 43, 226, 0.533)*/
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 35px;
+  text-align: center;
+}
+
+.favourites {
+  background-color: rgb(2, 164, 251); /* rgba(137, 43, 226, 0.533); */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+/*END favourites section*/
+
+/*-----------mobile settings------------*/
+
+@media screen and (max-width: 1010px) {
+  /*header*/
+  .headerWrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logoWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .buttonWrapper {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .buttonAdd,
+  .buttonExport {
+    margin-right: 0;
+  }
+
+  /*card section*/
+  .cardSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px;
+  }
+
+  /*favourites section*/
+  .favourites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px;
+  }
+}
