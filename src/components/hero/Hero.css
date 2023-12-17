@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Capriola&display=swap");
+
+.hero {
+  background-color: black;
+}
+.imgWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.image {
+  width: 300px;
+  height: 500px;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.348);
+  transition: 0.3s;
+}
+
+.image:hover {
+  box-shadow: 4px 4px 4px 4px rgba(221, 48, 29, 0.632);
+  cursor: pointer;
+}
+
+.element__title,
+.categories {
+  font-family: "Capriola", sans-serif;
+  font-size: 400;
+  color: white;
+}
+
+.categories {
+  text-align: center;
+  border-bottom: 2px dotted rgba(221, 48, 29, 0.632);
+}

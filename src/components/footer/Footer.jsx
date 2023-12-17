@@ -1,54 +1,44 @@
-import "./Footer.css";
+import './index.css'
 
 const Footer = () => {
   return (
-    <section className="footer">
-      <div className="list1">
-        <ul>
-          <li className="name1">Subscribtion</li>
-          <li className="name2">
-            <a href="/" target="_blank">
-              Prices and offers
-            </a>
-          </li>
-          <li className="name2">
-            <a href="/" target="_blank">
-              Subscribe now
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="list2">
-        <ul>
-          <li className="name1">Helps</li>
-          <li className="name2">
-            <a href="/" target="_blank">
-              Send and e-mail 📧
-            </a>
-          </li>
-          <li className="name2">
-            <a href="/" target="_blank">
-              Chat with us! 📱
-            </a>
-          </li>
-        </ul>
-      </div>
+    <footer className='Footer'>
+      <ul className="Footer__list">
+        <li>
+          <img src="https://img.icons8.com/ios/50/cottage--v1.png" alt="Shop" />
+          <p>Home</p>
+        </li>
+        <li>
+          <img
+            src="https://img.icons8.com/ios/50/shopping-bag--v1.png"
+            alt="Shop"
+          />
+          <p>Shop</p>
+        </li>
+        <li>
+          <img
+            src="https://img.icons8.com/ios/50/film-reel--v1.png"
+            alt="Coming Soon"
+          />
+          <p>Coming Soon</p>
+        </li>
+        <li>
+          <img
+            src="https://img.icons8.com/ios/50/smiling.png"
+            alt="Fast Laughs"
+          />
+          <p>Fast Laughs</p>
+        </li>
+        <li>
+          <img
+            src="https://img.icons8.com/ios/50/download--v1.png"
+            alt="Downloads"
+          />
+          <p>Downloads</p>
+        </li>
+      </ul>
+    </footer>
+  )
+}
 
-      <div className="newsletterBox">
-        <p class="newsletter">Newsletter</p>
-        <p class="newsletterParagraph">
-          Do you want to receive news about the latest series and films?
-          Subscribe now to the newsletter!
-        </p>
-        <input
-          type="text"
-          id="footerEmail"
-          name="email"
-          placeholder="Your email"
-        ></input>
-      </div>
-    </section>
-  );
-};
-
-export default Footer;
+export default Footer
