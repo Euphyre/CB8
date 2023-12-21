@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap");
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #4c6971;
+}
+
+.mainLogo {
+  display: inline-block;
+  width: 230px;
+  height: 200px;
+  background-image: url("https://e1.pxfuel.com/desktop-wallpaper/484/889/desktop-wallpaper-fake-drawing-depressed-fake-drawing-depressed-fake-smile-anime-boy.jpg");
+  background-size: cover;
+}
+
+.mainTitle {
+  display: flex;
+  font-family: "Rubik Doodle Shadow", sans-serif;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  color: black;
+}
+
+.buttonWrapper {
+  height: 200px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end; /* Allinea gli elementi nella parte inferiore */
+}
+
+.buttonLogout,
+.buttonLogin {
+  font-family: "Playpen Sans", sans-serif;
+
+  font-weight: 600;
+  text-decoration: none;
+  background-color: black;
+
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 4px 20px;
+  margin: 4px;
+}
+
+.buttonLogin a,
+.buttonLogout a {
+  text-decoration: none;
+  color: white;
+}
+
+.buttonLogin a:hover {
+  color: #4c6971;
+}
+
+.buttonLogout a:hover {
+  color: #4c6971;
+}
+
+.AddPost {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  background-color: #4c6971;
+  border-top: solid black;
+}
+
+.AddPost input,
+.AddPost textarea {
+  font-family: "Playpen Sans", sans-serif;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 0;
+  background-color: white;
+}
+
+.AddPost__btns {
+  display: flex;
+  gap: 20px;
+}
+
+.AddPost__btns button,
+.AddPost__btns input {
+  width: 100%;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: black;
+  font-family: "Rubik Doodle Shadow", sans-serif;
+}
