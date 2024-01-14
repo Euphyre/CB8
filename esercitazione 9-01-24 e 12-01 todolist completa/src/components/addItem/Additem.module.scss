@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+.input_bar {
+  font-family: "Press Start 2P", system-ui;
+  color: black;
+  width: 500px;
+  height: 30px;
+  background-color: #b294e9;
+  border: solid black;
+  outline: none; //per non mostrare la bordatura blu predefinita di chrome
+
+  &:focus {
+    border-color: #ffd7dc;
+  }
+}
+
+.button_add {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 15px;
+  padding: 8px;
+  margin: 10px;
+  background-color: #b294e9;
+  border: solid black;
+
+  &:hover {
+    background-color: #9f7ffe;
+  }
+}
+
+@media (max-width: 480px) {
+  .input_bar {
+    width: 100%; /* Ridimensiona l'input alla larghezza massima dello schermo */
+  }
+}
