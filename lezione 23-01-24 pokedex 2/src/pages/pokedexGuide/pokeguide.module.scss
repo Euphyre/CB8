@@ -1,0 +1,23 @@
+$color-1: #5296ae;
+
+.title_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  margin: 10px;
+}
+
+.title1 {
+  margin-top: 80px;
+}
+
+.link {
+  color: $color-1;
+}
+
+.text {
+  line-height: 2;
+}
