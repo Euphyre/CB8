@@ -1,0 +1,27 @@
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1; /* Opacità al 100% durante questi punti */
+  }
+  25%,
+  75% {
+    opacity: 0; /* Opacità al 0% durante questi punti */
+  }
+}
+
+.audio_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  font-family: "Press Start 2P", system-ui;
+  text-align: center;
+  animation: blink 2s infinite;
+}
+
+.player {
+  border: solid black;
+}

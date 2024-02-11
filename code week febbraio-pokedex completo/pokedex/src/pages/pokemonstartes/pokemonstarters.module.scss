@@ -1,0 +1,40 @@
+.card {
+  border: 6px solid;
+  margin: 10px;
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.725);
+  }
+}
+
+.name {
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.image {
+  width: 60%;
+}
+
+@media screen and (max-width: 430px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+}

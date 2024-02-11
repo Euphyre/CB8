@@ -1,0 +1,58 @@
+$color-1: #5296ae;
+$color-2: #e00000;
+
+.title_wrapper {
+  font-family: "Press Start 2P", system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  margin: 10px;
+}
+
+.title1 {
+  font-family: "Press Start 2P", system-ui;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.link {
+  font-family: "Press Start 2P", system-ui;
+  color: $color-1;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-2;
+  }
+}
+
+.text {
+  font-family: "Press Start 2P", system-ui;
+  padding: 20px;
+  line-height: 2;
+}
+
+@media screen and (max-width: 430px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
+  .title_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 20px;
+  }
+  .title,
+  .title1,
+  .text {
+    text-align: center;
+  }
+}

@@ -1,0 +1,51 @@
+$color-1: #5a8cce;
+$color-2: #ef8429;
+$color-3: #85e27c;
+$color-4: #e00000;
+
+.nav_wrapper {
+  font-family: "Press Start 2P", system-ui;
+  margin-bottom: 40px;
+
+  & ul {
+    list-style: none;
+  }
+  & ul li a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.list_wrapper ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  & li a {
+    margin: 20px;
+  }
+}
+
+//colori dei pokemon starters ihih
+.name1:hover {
+  color: $color-2;
+}
+.name2:hover {
+  color: $color-3;
+}
+.name3:hover {
+  color: $color-4;
+}
+.name4:hover {
+  color: $color-1;
+}
+
+@media screen and (max-width: 450px) {
+  .list_wrapper ul {
+    flex-direction: column;
+    align-items: center;
+    &li {
+      margin: 20px;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.body {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3a390145-1e80-4c9f-bea4-6f11959496cd/del304o-a42b2fab-d054-4ae3-be0b-dcb50b429172.jpg/v1/fill/w_1280,h_720,q_75,strp/pokeball_wallpaper_by_blackholekun_del304o-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvM2EzOTAxNDUtMWU4MC00YzlmLWJlYTQtNmYxMTk1OTQ5NmNkXC9kZWwzMDRvLWE0MmIyZmFiLWQwNTQtNGFlMy1iZTBiLWRjYjUwYjQyOTE3Mi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.uUBZCvo3rUs5zwjD83BHcfVX8H_E70EkJqrgIRqBCaw");
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  align-items: center;
+
+  .inputPokemon,
+  .btnPokemon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    box-sizing: content-box;
+    border: 0;
+    border-radius: 12px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    outline: none;
+    font-family: "Press Start 2P", system-ui;
+    border: solid black;
+    width: 30%;
+  }
+
+  .btnPokemon {
+    cursor: pointer;
+    background-color: #f98f39;
+    width: 30%;
+  }
+}
+
+.Pokedex {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*   box-shadow: inset 0 0 4px rgb(0, 0, 0);
+ */
+  border: 8px solid black;
+  width: 400px;
+  /* border-radius: 12px; */
+  background-color: white;
+
+  .image {
+    width: 200px;
+
+    &:hover {
+      transform: rotate(1, 0);
+    }
+  }
+
+  .type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "Press Start 2P", system-ui;
+
+    &::before {
+      content: "Type: ";
+      color: lightseagreen;
+      font-size: 1.4rem;
+    }
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.title,
+.type p,
+.info p,
+.stats p {
+  font-family: "Press Start 2P", system-ui, sans-serif;
+}
+
+@media screen and (max-width: 430px) {
+  .Pokedex {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    box-sizing: border-box;
+  }
+  .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

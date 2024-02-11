@@ -1,0 +1,30 @@
+@import "/pokedex/src/styles/globals.css";
+$color1: #cadca0;
+
+.Homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-family: "Press Start 2P", system-ui;
+  text-align: center;
+}
+
+.image {
+  margin: 20px;
+}
+
+.footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 600px) {
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}
