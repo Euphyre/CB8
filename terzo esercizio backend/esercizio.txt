@@ -1,0 +1,11 @@
+Settimana 2 – Esercizio 2 
+Obiettivo: applicare i metodi get e post di http e usare middleware custom 
+ 
+ 
+Cosa devi fare 
+Devi impostare un’applicazione che abbia una root con html come asset statico. 
+Dalla home page crea un link che colleghi ad una pagina con un form.  
+Userai il form per inviare dei dati a tua scelta. 
+I dati saranno visualizzati su un percorso denominato: /mostra-dati 
+Nella home ci sarà anche un link ad una pagina su percorso /dashboard ma su questa pagina potrà 
+entrare solo un utente denominato admin
